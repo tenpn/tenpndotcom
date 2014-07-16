@@ -70,3 +70,14 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+activate :deploy do |deploy|
+  deploy.method = :rsync
+  deploy.host   = "91.208.99.6"
+  deploy.path   = "/var/sites/t/tenpn.com/public_html/"
+  # Optional Settings
+  deploy.user  = "tenpncom" 
+  deploy.clean = true # remove orphaned files on remote host, default: false
+
+  deploy.build_before = true # default: false
+end
