@@ -11,17 +11,38 @@ title: DecisionFlex
       Let your AI make smarter decisions. Let your designers inform those decisions. Let your code run fast and alloc-free.
 .container
 
-  / MailChimp Signup Form 
-  .row
-    .col-md-4 
-      %p.text-muted
-        Decision<em>Flex</em> is not available to buy yet. Sign up to our newsletter to stay informed.
-    .col-md-8
-      .input-group.input-group-lg
-        %input.form-control{:type => "text", :placeholder => "you@example.com"}
-        %span.input-group-btn
-          %button.btn.btn-primary{:type => "submit"}
-            Sign up
+  / Begin MailChimp Signup Form
+  %link{:href => "//cdn-images.mailchimp.com/embedcode/slim-081711.css",
+        :rel => "stylesheet",
+        :type => "text/css"}
+  :css
+    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+  #mc_embed_signup
+    %form#mc-embedded-subscribe-form.validate{:action => "//tenpn.us7.list-manage.com/subscribe/post?u=07ac0637333686a32ac58fc38&amp;id=6834472875",
+                                              :method => "post",
+                                              :name => "mc-embedded-subscribe-form",
+                                              :novalidate => "",
+                                              :target => "_blank"}
+      %label{:for => "mce-EMAIL"} DecisionFlex isn't out yet. Sign up to our newsletter to stay informed:
+      %input#mce-EMAIL.email{:name => "EMAIL",
+                             :placeholder => "you@example.com",
+                             :required => "",
+                             :type => "email",
+                             :value => ""}
+        / real people should not fill this in and expect good things - do not remove this or risk form bot signups
+        %div{:style => "position: absolute; left: -5000px;"}
+          %input{:name => "b_07ac0637333686a32ac58fc38_6834472875",
+                 :tabindex => "-1",
+                 :type => "text",
+                 :value => ""}/
+        .clear
+          %input#mc-embedded-subscribe.button{:name => "subscribe",
+                                              :type => "submit",
+                                              :value => "Subscribe"}/
+  / End mc_embed_signup
+
   %hr
 
   / features
