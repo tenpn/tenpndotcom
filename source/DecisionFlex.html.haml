@@ -9,12 +9,22 @@ title: DecisionFlex
       Decision<em>Flex</em>
     %p
       Let your AI make smarter decisions. Let your designers inform those decisions. Let your code run fast and alloc-free.
-    %p
-      %a.btn.btn-primary.btn-lg{:role => "button"} 
-        Asset Store &raquo;
-
 .container
-  / Example row of columns 
+
+  / MailChimp Signup Form 
+  .row
+    .col-md-4 
+      %p.text-muted
+        Decision<em>Flex</em> is not available to buy yet. Sign up to our newsletter to stay informed.
+    .col-md-8
+      .input-group.input-group-lg
+        %input.form-control{:type => "text", :placeholder => "you@example.com"}
+        %span.input-group-btn
+          %button.btn.btn-primary{:type => "submit"}
+            Sign up
+  %hr
+
+  / features
   .row
     .col-md-4
       %h2
