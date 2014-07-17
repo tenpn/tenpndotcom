@@ -11,36 +11,7 @@ title: DecisionFlex
       Let your AI make smarter decisions. Let your designers inform those decisions. Let your code run fast and alloc-free.
 .container
 
-  / Begin MailChimp Signup Form
-  .row
-    .col-md-4
-      %p.text-muted
-        DecisionFlex isn't out yet. Sign up to our newsletter to stay informed.
-    .col-md-8
-      %form#mc-embedded-subscribe-form.validate{:action => "//tenpn.us7.list-manage.com/subscribe/post?u=07ac0637333686a32ac58fc38&amp;id=6834472875",
-                                              :method => "post",
-                                              :name => "mc-embedded-subscribe-form",
-                                              :novalidate => "",
-                                              :target => "_blank"}
-        / real people should not fill this in and expect good things - do not remove this or risk form bot signups
-        %div{:style => "position: absolute; left: -5000px;"}
-          %input{:name => "b_07ac0637333686a32ac58fc38_6834472875",
-                 :tabindex => "-1",
-                 :type => "text",
-                 :value => ""}/
-        .input-group.input-group-lg
-          %input.form-control{:name => "EMAIL",
-                              :placeholder => "you@example.com",
-                              :required => "",
-                              :type => "email",
-                              :value => ""}
-          %span.input-group-btn
-            %button.btn.btn-primary{:name => "subscribe",
-                                    :type => "submit",
-                                    :value => "Subscribe"}
-              Subscribe
-  / End mc_embed_signup
-
+  = partial "signup"
   %hr
 
   / features
@@ -61,6 +32,8 @@ title: DecisionFlex
       %p 
         Decision<em>Flex</em> works, whatever your game. Should your simulated person eat or drink next? What target should the AI shoot next? Should the football team consolidate the lead or go for broke? Even non-opponent roles, like player modeling!
 
+  %hr
+
   .row
     .col-md-4
       %h2
@@ -78,6 +51,8 @@ title: DecisionFlex
       %p
         Decision<em>Flex</em> is namespaced, to avoid polluting your codebase. It has a public bugs list. Updates will include release notes and upgrade paths. It uses semantic versioning.
 
+  %hr
+  = partial "signup"
   %hr
 
   %footer
