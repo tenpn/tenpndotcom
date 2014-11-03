@@ -8,70 +8,76 @@ title: DecisionFlex
     %h1
       Decision<em>Flex</em>
     %p
+      Utility theory tools for Unity3D.
+    %p
       Let your AI make smarter decisions. Let your designers inform those decisions. Let your code run fast and alloc-free.
 
 .container
 
   = partial "signup"
-  %hr
 
-  %hr
-  .row.top70
-    .col-md-6.col-md-push-3
-      %img.img-responsive{:src => "http://placehold.it/1000x360",
-                          :alt => "Flexible"}
-      %h1.text-center
-        Decision<em>Flex</em> works for your game
-      %p.text-center
-        Should your simulated person eat or drink next? What target should the AI shoot next? With what weapon? Should the football team consolidate the lead or go for broke? Decision<em>Flex</em> can even be used for non-opponent tasks, like modelling player behaviour! 
   %hr.top70
 
   / features
   .row
-    .col-sm-4
+    .col-md-6.col-md-push-3
+      %h1.text-center
+        What is Decision<em>Flex</em>?
+  .row
+    .col-sm-6
+      %img.img-responsive{:src => "http://placehold.it/1000x360",
+                          :alt => "Decisions"}
+      %h2.text-center
+        Decisive
+      %p.text-center 
+        Should the <em>sim</em>ulated person eat or drink next? What target should the AI shoot at? Should the sports team consolidate the lead or go for broke?
+    .col-sm-6
       %img.img-responsive{:src => "http://placehold.it/1000x360",
                           :alt => "Focused"}
       %h2.text-center
         Focused
       %p.text-center 
-        Decision<em>Flex</em> does one thing really well: it weighs up all the options in the context of the current situation, and makes a considered choice. No fluff, no sprawling frameworks that takes over your codebase. 
-    .col-sm-4
-      %img.img-responsive{:src => "http://placehold.it/1000x360",
-                          :alt => "Integrated"}
-      %h2.text-center
-        Integrated
-      %p.text-center 
-        Already using a state machine? Let Decision<em>Flex</em> decide when to transition. Using steering behaviours? Let Decision<em>Flex</em> inform the weights. Have an isolated decision? Decision<em>Flex</em> is just as happy by itself.
-    .col-sm-4
+        A tool, not a framework. Let Decision<em>Flex</em> decide when to transition in a state machine. Let Decision<em>Flex</em> inform the weights of steering behaviours. Have an isolated decision? Decision<em>Flex</em> is just as happy by itself.
+  %hr
+  .row
+    .col-md-6.col-md-push-3
+      %h1.text-center
+        Designer-focused
+  .row
+    .col-sm-6
       %img.img-responsive{:src => "images/designer-friendly-header.png",
-                          :alt => "Designer-Friendly"}
+                          :alt => "Easy to learn"}
       %h2.text-center
-        Designer-friendly
+        Easy to learn
       %p.text-center 
-        Decision<em>Flex</em> is built upon the hierarchy window and animation curves, so designers don't have to learn new tools. Programmers can easily expose variables to allow designers to construct their own decisions. 
-
-  .row.top70
-    .col-sm-4
+        Decision<em>Flex</em> is built upon known tools like the hierarchy window and animation curves, so designers don't have to learn new UI. It requires no equations or heavy maths.
+    .col-sm-6
+      %img.img-responsive{:src => "http://placehold.it/1000x360",
+                          :alt => "Focused"}
+      %h2.text-center
+        Components
+      %p.text-center 
+        Build decisions out of lego-brick components. How often should decisions be made? How should the best action be judged? 
+  %hr
+  .row
+    .col-md-6.col-md-push-3
+      %h1.text-center
+        Programmer-friendly
+  .row
+    .col-sm-6
       %img.img-responsive{:src => "images/optimised-header.png",
                           :alt => "Optimised"}
       %h2.text-center
         Optimised
-      %p.text-center
+      %p.text-center 
         Decision<em>Flex</em> is, out of the box, fast and allocation-free, so it can work at large scale. It also comes with tools to schedule and timeslice decisions, to give you fine control.
-    .col-sm-4
+    .col-sm-6
       %img.img-responsive{:src => "http://placehold.it/1000x360",
-                          :alt => "Extendable"}
+                          :alt => "Focused"}
       %h2.text-center
-        Extendable
-      %p.text-center
+        Engineered
+      %p.text-center 
         Decision<em>Flex</em> is open for extension. Write new context containers, schedule decisions at your own pace, or add new custom considerations.
-    .col-sm-4
-      %img.img-responsive{:src => "http://placehold.it/1000x360",
-                          :alt => "Professionally Developed"}
-      %h2.text-center
-        Professionally Developed
-      %p.text-center
-        Decision<em>Flex</em> is namespaced, to avoid polluting your codebase. It has a <a href="https://trello.com/b/3rKsv3jg/decisionflex">public bugs list</a>. Updates will include release notes and upgrade paths. It uses semantic versioning.
 
   %hr
   = partial "signup"
