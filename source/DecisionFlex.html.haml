@@ -1,5 +1,6 @@
 ---
 title: DecisionFlex
+layout: unitylayout
 ---
 
 / Main jumbotron for a primary marketing message or call to action 
@@ -81,8 +82,18 @@ title: DecisionFlex
 
   %hr
   = partial "signup"
+
   %hr
 
+  .row
+    .col-md6-mcol-md-push3.well.unityPlayer
+      .content{:id => "unityPlayer"}
+        .missing
+          %a{:href => "http://unity3d.com/webplayer/", 
+             :title => "Unity Web Player. Install now!"}
+            %img{:alt => "Unity Web Player. Install now!", 
+                 :src => "http://webplayer.unity3d.com/installation/getunity.png", 
+                 :width => "193", :height => "63"}
   %footer
     %p
       &copy; Company 2014
