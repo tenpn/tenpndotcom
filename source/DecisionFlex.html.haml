@@ -1,6 +1,5 @@
 ---
 title: DecisionFlex
-layout: unitylayout
 ---
 
 / Main jumbotron for a primary marketing message or call to action 
@@ -75,17 +74,19 @@ layout: unitylayout
 .container
   %hr
   .row
-    %h1.text-center
-      Demo Scene
+    .col-md-12
+      %h1.text-center
+        Is there a Decision<em>Flex</em> web demo?
   .row
-    .col-md-12.well.unityPlayer
-      .content{:id => "unityPlayer"}
-        .missing
-          %a{:href => "http://unity3d.com/webplayer/", 
-             :title => "Unity Web Player. Install now!"}
-            %img{:alt => "Unity Web Player. Install now!", 
-                 :src => "http://webplayer.unity3d.com/installation/getunity.png", 
-                 :width => "193", :height => "63"}
+    .col-md-12
+      %p.lead.text-center
+        You can find a demo of Decision<em>Flex</em> running in the browser beyond <a href="DecisionFlexDemo.html">this link</a>.
+  %hr
+  = partial "signup"
+
+
+.container
+  %hr  
   %footer
     %p
       &copy; Andrew Fray 2014
