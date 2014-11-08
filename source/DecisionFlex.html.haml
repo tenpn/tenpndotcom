@@ -9,103 +9,65 @@ layout: unitylayout
     %h1
       Decision<em>Flex</em>
     %p
-      Utility theory tools for Unity3D.
-    %p
-      Let your AI make smarter decisions. Let your designers inform those decisions. Let your code run fast and alloc-free.
+      Simple to use, emergent decision making in Unity3D
 
 .container
 
   = partial "signup"
 
-  %hr.top70
-
-  / features
+  %hr
   .row
-    .col-md-6.col-md-push-3
+    .col-md-12
       %h1.text-center
         What is Decision<em>Flex</em>?
   .row
-    .col-sm-6
+    .col-sm-3
       %img.img-responsive{:src => "http://placehold.it/1000x360",
                           :alt => "Decisions"}
-      %h2.text-center
-        Decisive
       %p.text-center.lead 
-        Should the <em>sim</em>ulated person eat or drink next? What target should the AI shoot at? Should the sports team consolidate the lead or go for broke?
-    .col-sm-6
+        Decision<em>Flex</em> helps model complex decisions, where mulitple <strong>considerations</strong> must be weighed before chosing a final <strong>action</strong>
+    .col-sm-3
       %img.img-responsive{:src => "http://placehold.it/1000x360",
                           :alt => "Focused"}
-      %h2.text-center
-        Focused
       %p.text-center.lead 
-        A tool, not a framework. Let Decision<em>Flex</em> decide when to transition in a state machine. Let Decision<em>Flex</em> inform the weights of steering behaviours. Have an isolated decision? Decision<em>Flex</em> is just as happy by itself.
-  %hr
-  .row
-    .col-md-6.col-md-push-3
-      %h1.text-center
-        Designer-focused
-  .row
-    .col-sm-6
-      %img.img-responsive{:src => "images/designer-friendly-header.png",
-                          :alt => "Easy to learn"}
-      %h2.text-center
-        Easy to learn
-      %p.text-center.lead 
-        Decision<em>Flex</em> is built upon known tools like the hierarchy window and animation curves, so designers don't have to learn new UI. It requires no equations or heavy maths.
-    .col-sm-6
+        It uses <strong>familiar Unity editor tools</strong> to do this, including the hierarchy window and animation curves
+    .col-sm-3
       %img.img-responsive{:src => "http://placehold.it/1000x360",
                           :alt => "Focused"}
-      %h2.text-center
-        Easy to build
       %p.text-center.lead 
-        Intuitively create decisions out of actions, and the reasons (or <em>considerations</em>) taking each action. Set the influence of considerations compared to each other.
-  %hr
-  .row
-    .col-md-6.col-md-push-3
-      %h1.text-center
-        Programmer-friendly
-  .row
-    .col-sm-6
-      %img.img-responsive{:src => "images/optimised-header.png",
-                          :alt => "Optimised"}
-      %h2.text-center
-        Optimised
-      %p.text-center.lead 
-        Decision<em>Flex</em> is, out of the box, fast and allocation-free, so it can work at large scale. It also comes with tools to schedule and timeslice decisions, to give you fine control.
-    .col-sm-6
+        Decision<em>Flex</em> is easy to connect to your game, with <strong>minimal scripting</strong>. It requires <strong>no</strong> complex math equations.
+    .col-sm-3
       %img.img-responsive{:src => "http://placehold.it/1000x360",
                           :alt => "Focused"}
-      %h2.text-center
-        Engineered
       %p.text-center.lead 
-        Decision<em>Flex</em> is open for extension. Write new context containers, schedule decisions at your own pace, or add new custom considerations.
+        It uses "utility theory" to produce <strong>emergent and human-like</strong> decisions, and is easily tweaked from the editor to get exactly right
 
   %hr
-  = partial "signup"
-
-.container
-  %hr
-  .row
-    %h1.text-center
-      How does Decision<em>Flex</em> work?
   .row
     .col-md-12
-      %p.lead
-        Decision<em>Flex</em> is centered around the concept of a <strong>decision</strong>, where one of many <strong>actions</strong> must be selected. Internally, it uses utility theory to model choice and decision-making.
-      %p.lead
-        Each action has many <strong>considerations</strong>, which each take a single property of the game - current health, distance to enemy, etc - and convert it into a value between 0 and 1. By converting everything to this same range, we can easily compare apples to oranges. The conversion is normally done by creating an animation curve that maps the range of valid values for the property to 0 to 1. 
-      %p.lead
-        All of the consideration scores for one action are multiplied together to produce a total action score.
-      %p.lead
-        Next, all total action scores are compared. You can decide what happens next, but two built-in stragies are:
-      %ul
-        %li.lead
-          <strong>Pick highest action score</strong>: this is best for when you absolutely need to make the right decision. A soldier picking targets to attack might use this strategy.
-        %li.lead
-          <strong>Pick weighted random action</strong>: this strategy picks randomly, but uses the scores as a guide. For instance, if two actions score 1 and 0.5, the second action will still be picked 33% of the time, even though it scored less. This is good if you want your AI to behave in a human manner, and sometimes pick the wrong thing.
-      %p.lead
-        Finally, the winning action is executed.
-
+      %h1.text-center
+        Where is Decision<em>Flex</em> useful?
+  .row
+    .col-sm-3
+      %img.img-responsive{:src => "images/designer-friendly-header.png",
+                          :alt => "Easy to learn"}
+      %p.text-center.lead 
+        Sims-like simulated humans, deciding their next action. Should they drink, work, exercise or rest?
+    .col-sm-3
+      %img.img-responsive{:src => "http://placehold.it/1000x360",
+                          :alt => "Focused"}
+      %p.text-center.lead 
+        Soliders choosing the next target to attack, and with what weapon, taking into account weapon effectiveness, target range, and ammo count.
+    .col-sm-3
+      %img.img-responsive{:src => "http://placehold.it/1000x360",
+                          :alt => "Focused"}
+      %p.text-center.lead 
+        Bots deciding if now is a good time to pick up a health pack, depending on distance to the health pack and current health.
+    .col-sm-3
+      %img.img-responsive{:src => "http://placehold.it/1000x360",
+                          :alt => "Focused"}
+      %p.text-center.lead 
+        Anywhere you need to make a decision between multiple actions, based on the interaction of many considerations
   %hr
   = partial "signup"
 
