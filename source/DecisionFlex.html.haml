@@ -13,7 +13,7 @@ title: DecisionFlex
 
 .container
 
-  = partial "signup"
+  = partial('signup', :locals => {:desc => "Decision<em>Flex</em> isn't out yet. Sign up to our newsletter and we'll let you know the second it's available."})
 
   %hr
   .row
@@ -81,7 +81,7 @@ title: DecisionFlex
       %p.lead.text-center
         You can find a demo of Decision<em>Flex</em> running in the browser beyond <a href="DecisionFlexDemo.html">this link</a>.
   %hr
-  = partial "signup"
+  = partial('signup', :locals => {:desc => "Decision<em>Flex</em> isn't out yet. Sign up to our newsletter and we'll let you know the second it's available."})
 
 
 .container
