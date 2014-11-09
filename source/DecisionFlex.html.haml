@@ -72,7 +72,47 @@ title: DecisionFlex
   .row
     .col-md-12
       %p.lead.text-center
-        You can find a demo of Decision<em>Flex</em> running in the browser beyond <a href="DecisionFlexDemo.html">this link</a>.
+        Yes! You can find a demo of Decision<em>Flex</em> running in the browser beyond <a href="DecisionFlexDemo.html">this link</a>.
+  %hr
+  .row
+    .col-md-12
+      %h1.text-center
+        What does Decision<em>Flex</em> look like in action?
+  .row
+    .col-md-6
+      .thumbnail
+        %img.img-responsive{:src => "images/hierarchy-shot.png", :alt => "Hierarchy of multiple decisions"}
+        .caption
+          %h3
+            Hierarchy
+          %p.lead
+            The hierarchy lays out the decision, its actions, and the considerations for each action. It's easy to construct and read.
+    .col-md-6
+      .thumbnail
+        %img.img-responsive{:src => "images/decisions-shot.png", :alt => "Decisions made out of lego-brick components"}
+        .caption
+          %h3
+            Decisions
+          %p.lead
+            Snap together decisions out of lego-brick components. How often should a decision be made? Should the best action be chosen, or do you need slightly more fuzzy human behaviour?
+    .col-md-6
+      .thumbnail
+        %img.img-responsive{:src => "images/considerations-shot.png", :alt => "Animation curves weighing considerations"}
+        .caption
+          %h3
+            Considerations
+          %p.lead
+            Tell Decision<em>Flex</em> how to weigh the factors influencing each action. Use animation curves to easily compare apples to oranges. No complex maths necessary.
+    .col-md-6
+      .thumbnail
+        %img.img-responsive{:src => "images/optimised-header.png", :alt => "Fast and smooth"}
+        .caption
+          %h3
+            Fast and smooth
+          %p.lead
+            Optimised out-of-the-box to never allocate. Fast, and copes fine with pooling. Comes with tools to timeslice decisions across multiple frames for budgeting.
+
+      
   %hr
   = partial('signup', :locals => {:desc => "Decision<em>Flex</em> isn't out yet. Sign up to our newsletter and we'll let you know the second it's available."})
 
