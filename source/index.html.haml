@@ -2,60 +2,51 @@
 title: TenPN.com
 ---
 
-.navbar.navbar-inverse.navbar-fixed-top{:role => "navigation"}
-  .container
-    .navbar-header
-      %button.navbar-toggle{:type => "button", :'data-toggle' => "collapse", :'data-target' => ".navbar-collapse"}
-        %span.sr-only
-          Toggle navigation
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-      %a.navbar-brand{:href => "#"}
-        TenPN
-    .navbar-collapse.collapse
-
 / Main jumbotron for a primary marketing message or call to action 
 .jumbotron
   .container
-    %h1
-      TenPN Technologies
+    .text-info
+      %h1
+        TenPN
     %p
-      Production-ready Unity plugins, and blog posts on Unity, artificial intelligence, and game development
-    %p
-      %a.btn.btn-primary.btn-lg{:role => "button"} 
-        Learn more &raquo;
+      Video game engine plugins and technology
 
 .container
   / Example row of columns 
   .row
-    .col-md-4
+    .col-sm-4
       %h2
         DecisionFlex
-      %p 
-        A decision-making AI plugin for Unity. Delete your if-else blocks and let DecisionFlex weigh all the options. Data-driven and designer friendly.
+      %p.lead
+        A designer-friendly decision-making AI plugin for Unity. Delete your if-else blocks and let DecisionFlex weigh all the options.
       %p
-        %a.btn.btn-default{:href => "DecisionFlex.html", :role => "button"}
+        %a.btn.btn-primary{:href => "DecisionFlex.html", :role => "button"}
           View details &raquo;
-    .col-md-4
+    .col-sm-4
       %h2
         Blog
-      %p 
-        Something something useful posts on technology and game development
+      %p.lead
+        Posts on game development, artificial intelligence, and updates on TenPN plugins from Andrew Fray
       %p
-        %a.btn.btn-default{:href => "#", :role => "button"}
-          View details &raquo;
-    .col-md-4
+        %a.btn.btn-default{:href => "http://andrewfray.wordpres.com", :role => "button"}
+          Visit &raquo;
+    .col-sm-4
       %h2
-        Heading
-      %p 
-        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      %p
-        %a.btn.btn-default{:href => "#", :role => "button"}
-          View details &raquo;
-
+        Contact
+      %p.lead
+        For feedback, questions, enquiries and anything else that fills up this paragraph to roughly the right length
+      .row
+        .col-xs-6
+          %p
+            %a.btn.btn-default.btn-block{:href => "http://www.twitter.com/tenpn", :role => "button"}
+              Twitter &raquo;
+        .col-xs-6
+          %p
+            %a.btn.btn-default.btn-block{:href => "mailto:andrew.fray@gmail.com", :role => "button"}
+              Email &raquo;
+      
   %hr
 
   %footer
     %p
-      &copy; Company 2014
+      &copy; Andrew Fray 2014
