@@ -92,14 +92,6 @@ title: DecisionFlex
             The hierarchy lays out the decision, its actions, and the considerations for each action. It's easy to construct and read.
     .col-md-6
       .thumbnail
-        %img.img-responsive{:src => "images/decisions-shot.png", :alt => "Decisions made out of lego-brick components"}
-        .caption
-          %h3
-            Flexibility
-          %p.lead
-            Snap together decisions out of lego-brick components. How often should a decision be made? Should the best action be chosen, or do you need slightly more fuzzy human behaviour?
-    .col-md-6
-      .thumbnail
         %img.img-responsive{:src => "images/considerations-shot.png", :alt => "Animation curves weighing considerations"}
         .caption
           %h3
@@ -114,7 +106,14 @@ title: DecisionFlex
             Examples, tutorials and documentation
           %p.lead
             Comes with three wide-ranging example scenes, a tutorial and comprehensive documentation to get you up and running as fast as possible.
-
+    .col-md-6
+      .thumbnail
+        %img.img-responsive{:src => "images/optimised-header.png", :alt => "Fast and smooth"}
+        .caption
+          %h3
+            Optimised
+          %p.lead
+            Decision<em>Flex</em> runs fast with no allocations out of the box. It copes with pooling. It has tools to timeslice decisions for predictiability and budgeting. 
       
   %hr
   = partial('signup', :locals => {:desc => "Decision<em>Flex</em> isn't out yet. Sign up to our newsletter and we'll let you know the second it's available."})
