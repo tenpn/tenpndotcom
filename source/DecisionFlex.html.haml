@@ -19,7 +19,30 @@ title: DecisionFlex
   .row
     .col-md-12
       %h1.text-center
-        What is Decision<em>Flex</em>?
+        What does Decision<em>Flex</em> do?
+  .row
+    .col-sm-6.col-lg-3
+      %img.img-responsive{:src => "images/iperson.png", :alt => "Eat Drink Work Exercise"}
+      %p.text-center.lead 
+        Decision<em>Flex</em> helps games make decisions, like Sims-like simulated humans deciding if their next action is eat, drink, work or exercise.
+    .col-sm-6.col-lg-3
+      %img.img-responsive{:src => "images/solider.png", :alt => "Targets"}
+      %p.text-center.lead 
+        Soliders choosing the next target to attack, and with what weapon, considering weapon effectiveness, target range, and ammo count.
+    .col-sm-6.col-lg-3
+      %img.img-responsive{:src => "images/bots.png", :alt => "Bot health pickup"}
+      %p.text-center.lead 
+        Bots deciding if now is a good time to pick up a health pack, depending on distance to the pack and current health.
+    .col-sm-6.col-lg-3
+      %img.img-responsive{:src => "images/anything.png", :alt => "Anything!"}
+      %p.text-center.lead 
+        Anywhere you need to make a decision between multiple actions, based on the interaction of many considerations
+
+  %hr
+  .row
+    .col-md-12
+      %h1.text-center
+        How does Decision<em>Flex</em> work?
   .row
     .col-sm-6.col-lg-3
       %img.img-responsive{:src => "http://placehold.it/1000x360", :alt => "Decisions"}
@@ -39,29 +62,6 @@ title: DecisionFlex
       %img.img-responsive{:src => "http://placehold.it/1000x360", :alt => "Focused"}
       %p.text-center.lead 
         It uses "utility theory" to produce <strong>emergent and human-like</strong> decisions, and is easily tweaked from the editor to get exactly right
-
-  %hr
-  .row
-    .col-md-12
-      %h1.text-center
-        Where is Decision<em>Flex</em> useful?
-  .row
-    .col-sm-6.col-lg-3
-      %img.img-responsive{:src => "images/iperson.png", :alt => "Eat Drink Work Exercise"}
-      %p.text-center.lead 
-        Sims-like simulated humans, deciding their next action. Should they eat, drink, work or exercise?
-    .col-sm-6.col-lg-3
-      %img.img-responsive{:src => "images/solider.png", :alt => "Targets"}
-      %p.text-center.lead 
-        Soliders choosing the next target to attack, and with what weapon, considering weapon effectiveness, target range, and ammo count.
-    .col-sm-6.col-lg-3
-      %img.img-responsive{:src => "images/bots.png", :alt => "Bot health pickup"}
-      %p.text-center.lead 
-        Bots deciding if now is a good time to pick up a health pack, depending on distance to the pack and current health.
-    .col-sm-6.col-lg-3
-      %img.img-responsive{:src => "images/anything.png", :alt => "Anything!"}
-      %p.text-center.lead 
-        Anywhere you need to make a decision between multiple actions, based on the interaction of many considerations
 
 .container
   %hr
