@@ -1,5 +1,6 @@
 ---
 title: DecisionFlex
+layout: unitylayout
 ---
 
 / Main jumbotron for a primary marketing message or call to action 
@@ -63,16 +64,21 @@ title: DecisionFlex
       %p.text-center.lead 
         It uses "utility theory" to produce <strong>emergent and human-like</strong> decisions, and is easily tweaked from the editor to get exactly right
 
-.container
   %hr
+
   .row
-    .col-md-12
+    .col-md12
       %h1.text-center
-        Is there a Decision<em>Flex</em> web demo?
+        Is there a Decision<em>Flex</em> demo?
   .row
-    .col-md-12
-      %p.lead.text-center
-        Yes! You can find a demo of Decision<em>Flex</em> running in the browser beyond <a href="DecisionFlexDemo.html">this link</a>.
+    .col-xs-12.visible-xs.visible-sm
+      %p.text-center
+        (Yes, but only on wider desktop browsers)
+    .content.hidden-xs.hidden-sm{:id => "unityPlayer"}
+      .missing
+        %a{:href => "http://unity3d.com/webplayer/", :title => "Unity Web Player. Install now!"}
+          %img{:alt => "Unity Web Player. Install now!", :src => "http://webplayer.unity3d.com/installation/getunity.png", :width => "193", :height => "63"}
+                
   %hr
   = partial('signup', :locals => {:desc => "Decision<em>Flex</em> isn't out yet. Sign up to our newsletter and we'll let you know the second it's available."})
 
