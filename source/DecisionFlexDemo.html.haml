@@ -83,14 +83,13 @@ layout:
           .missing
             %a{:href => "http://unity3d.com/webplayer/", :title => "Unity Web Player. Install now!"}
               %img{:alt => "Unity Web Player. Install now!", :src => "http://webplayer.unity3d.com/installation/getunity.png", :width => "193", :height => "63"}
-      .row
-        %hr
-          = partial('signup', :locals => {:desc => "Decision<em>Flex</em> isn't out yet. Sign up to our newsletter and we'll let you know the second it's available."})
-        %hr
-
-    %footer
-      %p
-        &copy; Andrew Fray 2014
+      %hr
+      = partial('signup', :locals => {:desc => "Decision<em>Flex</em> isn't out yet. Sign up to our newsletter and we'll let you know the second it's available."})
+      %hr
+    .container
+      %footer
+        %p
+          &copy; Andrew Fray 2014
 
   / jQuery (necessary for Bootstrap's JavaScript plugins) 
   %script{:src => "libs/jquery-2.1.1.min.js"}
