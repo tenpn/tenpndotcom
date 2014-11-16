@@ -79,7 +79,10 @@ layout:
           %h1.text-center
             Decision<em>Flex</em> Demo
       .row
-        .content{:id => "unityPlayer"}
+        .col-xs-12.visible-xs.visible-sm
+          %p.text-center
+            (Demo only visible on wider desktop browsers)
+        .content.hidden-xs.hidden-sm{:id => "unityPlayer"}
           .missing
             %a{:href => "http://unity3d.com/webplayer/", :title => "Unity Web Player. Install now!"}
               %img{:alt => "Unity Web Player. Install now!", :src => "http://webplayer.unity3d.com/installation/getunity.png", :width => "193", :height => "63"}
