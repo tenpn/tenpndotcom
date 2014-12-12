@@ -14,9 +14,6 @@ layout: unitylayout
 
 .container
 
-  = partial('signup', :locals => {:desc => "Sign up to our newsletter if you'd like to know the moment Decision<em>Flex</em> is on the Asset Store."})
-  = partial 'itchpurchase'
-
   .row
     .col-md-12
       %h1.text-center
@@ -39,7 +36,6 @@ layout: unitylayout
       %p.text-center.lead 
         Anywhere you need to make a decision between multiple <strong>actions</strong>, based on many <strong>considerations</strong>, Decision<em>Flex</em> will make it easy
 
-  %hr
   .row
     .col-md-12
       %h1.text-center
@@ -64,7 +60,7 @@ layout: unitylayout
       %p.text-center.lead 
         In no time at all your game can be making <strong>emergent</strong> and <strong>human-like</strong> decisions. You can design and tweak them from the editor to get them exactly right.
 
-  %hr
+  = partial 'paddlepurchase'
 
   .row
     .col-md12
@@ -79,8 +75,6 @@ layout: unitylayout
         %a{:href => "http://unity3d.com/webplayer/", :title => "Unity Web Player. Install now!"}
           %img{:alt => "Unity Web Player. Install now!", :src => "http://webplayer.unity3d.com/installation/getunity.png", :width => "193", :height => "63"}
                 
-  = partial 'itchpurchase'
-
   .row
     .col-md-12
       %h1.text-center
@@ -119,8 +113,8 @@ layout: unitylayout
           %p.lead
             Decision<em>Flex</em> runs fast with no allocations out of the box. It copes with pooling. It has tools to timeslice decisions for predictiability and budgeting. 
       
+  = partial 'paddlepurchase'
   = partial('signup', :locals => {:desc => "Sign up to our newsletter if you'd like to know the moment Decision<em>Flex</em> is on the Asset Store."})
-  = partial 'itchpurchase'
 
 .container
   %footer
