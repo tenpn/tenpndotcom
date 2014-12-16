@@ -72,12 +72,11 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.method = :rsync
-  deploy.host   = "91.208.99.6"
-  deploy.path   = "/var/sites/t/tenpn.com/public_html/"
-  # Optional Settings
-  deploy.user  = "tenpncom" 
-  deploy.clean = true # remove orphaned files on remote host, default: false
-
-  deploy.build_before = true # default: false
+  deploy.method   = :ftp
+  deploy.host     = 'ftp.tenpn.com'
+  deploy.path     = 'public_html/'
+  deploy.user     = 'andrew@tenpn.com'
+  # https://github.com/karlfreeman/middleman-deploy/issues/22#issuecomment-18701276
+  deploy.password = `security 2>&1 >/dev/null find-generic-password -ga andrew@tenpn.com |ruby -e 'print $1 if STDIN.gets =~ /^password: "(.*)"$/'`
+  deploy.build_before = true 
 end
