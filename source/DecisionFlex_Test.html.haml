@@ -1,0 +1,140 @@
+---
+title: DecisionFlex
+layout: unitylayout
+---
+
+/ Main jumbotron for a primary marketing message or call to action 
+.jumbotron
+  .container
+    .text-info
+      %h1
+        Decision<em>Flex</em>
+    %p
+      Simple to use, emergent decision making in Unity3D
+
+.container
+
+  .row
+    .col-md-12
+      %h2.text-center
+        Does your AI have to choose between <strong>many</strong> actions any one time?
+  .row
+    .col-sm-6.col-lg-3
+      %img.img-responsive{:src => "images/solider.png", :alt => "Targets"}
+      %p.text-center.lead 
+        Run to cover, fall back, shoot, or pick up health, depending on location, player actions, and health?
+    .col-sm-6.col-lg-3
+      %img.img-responsive{:src => "images/iperson.png", :alt => "Eat Drink Work Exercise"}
+      %p.text-center.lead 
+        Eat, drink, work, exercise, or sleep, depending on AI thirst, hunger, wealth and fitness?
+    .clearfix.visible-md-block
+    .col-sm-6.col-lg-3
+      %img.img-responsive{:src => "images/bots.png", :alt => "Bot health pickup"}
+      %p.text-center.lead 
+        Punch, kick or block depending on opponent position, action and the AI's personality?
+    .col-sm-6.col-lg-3
+      %img.img-responsive{:src => "images/anything.png", :alt => "Anything!"}
+      %p.text-center.lead 
+        Align the player with one of several factions, depending on player action time and location? And many more.
+
+  .row
+    .col-md-12
+      %h2.text-center
+        Are you satisfied with your AI implementation?
+  .row
+    .col-sm-6
+      %img.img-responsive{:src => "images/utility.png", :alt => "Utility theory"}
+      %p.text-center.lead 
+        Is it a <strong>mess</strong> of special-case nested if-else statements? A <strong>tangle</strong> of state transitions? A web of behaviour trees?
+    .col-sm-6
+      %img.img-responsive{:src => "images/tools.png",
+                          :alt => "Hierarchy and animation curve tools"}
+      %p.text-center.lead 
+        Is it <strong>time-consuming</strong> to maintain and balance? Is it <strong>buggy</strong> and hard to understand?
+
+  %hr
+  .row 
+    .col-md-12
+      %h2.text-center 
+        Delete all that code! Decision<em>Flex</em> for Unity can help!
+  .row
+    .col-sm-6.col-lg-3
+      %img.img-responsive{:src => "images/emergent.png", :alt => "Emergent and alive"}
+      %p.text-center.lead 
+        Decision<em>Flex</em> is good at making <strong>emergent</strong> and human-like AI
+    .col-sm-6.col-lg-3
+      %img.img-responsive{:src => "images/codeeq.png", :alt => "Minimal code, no equations"}
+      %p.text-center.lead 
+        Is <strong>quick</strong> to integrate, with minimal code, full tutorial and docs, and no complex maths
+    .clearfix.visible-sm-block
+    .col-sm-6.col-lg-3
+      %img.img-responsive{:src => "images/tools.png",
+                          :alt => "Hierarchy and animation curve tools"}
+      %p.text-center.lead 
+        Decision<em>Flex</em> is <strong>easy</strong> to balance and maintain, using tools you know like the hierarchy and animation curves
+    .col-sm-6.col-lg-3
+      %img.img-responsive{:src => "images/utility.png", :alt => "Utility theory"}
+      %p.text-center.lead 
+        Based on <strong>utility theory</strong>, an increasingly popular decision-making approach
+
+  = partial 'paddlepurchase'
+
+  .row
+    .col-md12
+      %h1.text-center
+        Is there a Decision<em>Flex</em> demo?
+  .row
+    .col-xs-12.visible-xs.visible-sm
+      %p.text-center
+        (Yes, but only on wider desktop browsers)
+    .content.hidden-xs.hidden-sm{:id => "unityPlayer"}
+      .missing
+        %a{:href => "http://unity3d.com/webplayer/", :title => "Unity Web Player. Install now!"}
+          %img{:alt => "Unity Web Player. Install now!", :src => "http://webplayer.unity3d.com/installation/getunity.png", :width => "193", :height => "63"}
+                
+  .row
+    .col-md-12
+      %h1.text-center
+        What does Decision<em>Flex</em> look like in action?
+  .row
+    .col-md-6
+      .thumbnail
+        %img.img-responsive{:src => "images/hierarchy-shot.png", :alt => "Hierarchy of multiple decisions"}
+        .caption
+          %h3
+            Hierarchy
+          %p.lead
+            The hierarchy lays out the decision, its actions, and the considerations for each action. It's easy to construct and read.
+    .col-md-6
+      .thumbnail
+        %img.img-responsive{:src => "images/considerations-shot.png", :alt => "Animation curves weighing considerations"}
+        .caption
+          %h3
+            Considerations
+          %p.lead
+            Tell Decision<em>Flex</em> how to weigh the factors influencing each action. Use animation curves to easily compare apples to oranges. No complex maths necessary.
+    .col-md-6
+      .thumbnail
+        %img.img-responsive{:src => "images/docs-shot.png", :alt => "Fast and smooth"}
+        .caption
+          %h3
+            Source code, examples, and documentation
+          %p.lead
+            Comes with the full DF C# source, three wide-ranging example scenes, a <a href="df-v1.0/tutorial.html">tutorial</a> and <a href="df-v1.0/index.html">comprehensive documentation</a> to get you up and running as fast as possible.
+    .col-md-6
+      .thumbnail
+        %img.img-responsive{:src => "images/optimised-header.png", :alt => "Fast and smooth"}
+        .caption
+          %h3
+            Optimised
+          %p.lead
+            Decision<em>Flex</em> runs fast with no allocations out of the box. It copes with pooling. It has tools to timeslice decisions for predictiability and budgeting. 
+      
+  = partial 'paddlepurchase'
+  = partial('signup', :locals => {:desc => "Sign up to our newsletter if you'd like to know about future products from TenPN."})
+
+.container
+  %footer
+    %p
+      &copy; Andrew Fray 2014
+    Heartbeat designed by <a href="http://www.thenounproject.com/jardson">Jardson A.</a>. Plant designed by <a href="http://www.thenounproject.com/prerakpatel">Prerak Patel</a>. Wrench designed by <a href="http://www.thenounproject.com/tgines">Tony Gines</a>. Gears designed by <a href="http://www.thenounproject.com/crisdobbins">Cris Dobbins</a>. No designed by <a href="http://www.thenounproject.com/ricardo.cherem">Ricardo Augusto Cherem</a>. Calculator designed by <a href="http://www.thenounproject.com/rutmer">Rutmer Zijlstra</a>. Css designed by <a href="http://www.thenounproject.com/dreamer810">Qing Li</a>. Graph designed by <a href="http://www.thenounproject.com/MisterPixel">Mister Pixel</a>. Flow Chart designed by <a href="http://www.thenounproject.com/ales.kalan.zlatoroh">Aleš Kalan</a>. Dumbbell designed by <a href="http://www.thenounproject.com/alesantander">Alejandro Santander</a>. Work designed by <a href="http://www.thenounproject.com/thisisjaclyne">Jaclyne Ooi</a>. M16 designed by <a href="http://www.thenounproject.com/nadav.barkan">Nadav Barkan</a>. Targets designed by <a href="http://www.thenounproject.com/hayden.kerrisk">Hayden Kerrisk</a>. First Aid designed by <a href="http://www.thenounproject.com/thibault.geffroy">Thibault Geffroy</a>. All from the <a href="http://www.thenounproject.com">Noun Project</a>. 
