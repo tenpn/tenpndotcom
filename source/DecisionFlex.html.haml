@@ -9,59 +9,58 @@ layout: unitylayout
     .text-info
       %h1
         Decision<em>Flex</em>
-    %p
+    %p.lead
       Simple to use, emergent decision making in Unity3D
+    %p
+      %a.btn.btn-large.btn-info{:href => "#buy", :role => "button"}
+        Buy
+      %a.btn.btn-large.btn-info{:href => "#demos", :role => "button"}
+        Demos
 
 .container
 
   .row
-    .col-md-12
-      %h1.text-center
-        What does Decision<em>Flex</em> do?
+    .col-md-5.col-md-push-7
+      %img.img-responsive.center-block{:src => "images/bot-taller.png"}
+    .col-md-7.col-md-pull-5
+      %h3
+        Do you want AI that acts in a reliable and human-like manner?
+      %p.lead
+        To run to cover, fall back, shoot, or pick up health, depending on location, health, and opponent actions
+      %p.lead
+        Or to align the player with one of several factions, depending on player action time and location
+      %p.lead
+        An AI that can choose between one of many discrete actions, depending on many interconnected factors
+
+  %hr
+        
   .row
-    .col-sm-6.col-lg-3
-      %img.img-responsive{:src => "images/iperson.png", :alt => "Eat Drink Work Exercise"}
-      %p.text-center.lead 
-        Sims-like simulated humans deciding if their next action is eat, drink, work, exercise or sleep, based on thirst, hunger, wealth and fitness.
-    .col-sm-6.col-lg-3
-      %img.img-responsive{:src => "images/solider.png", :alt => "Targets"}
-      %p.text-center.lead 
-        Soldiers choosing the next target to attack, and with what weapon, based on weapon effectiveness, target range, and ammo count
-    .col-sm-6.col-lg-3
-      %img.img-responsive{:src => "images/bots.png", :alt => "Bot health pickup"}
-      %p.text-center.lead 
-        Bots deciding if now is a good time to pick up a health pack, based on distance to the pack and current health
-    .col-sm-6.col-lg-3
-      %img.img-responsive{:src => "images/anything.png", :alt => "Anything!"}
-      %p.text-center.lead 
-        Anywhere you need to make a decision between multiple <strong>actions</strong>, based on many <strong>considerations</strong>, Decision<em>Flex</em> will make it easy
+    .col-md-5
+      %img.img-responsive.center-block{:src => "images/mess-taller.png"}
+    .col-md-7
+      %h3
+        Is your AI implementation becoming a hassle?
+      %p.lead
+        Is it a mess of special-case nested if-else statements, or a tangle of state transitions?
+      %p.lead
+        Is it time-consuming to maintain and balance? Is it buggy and hard to understand?
+
+  %hr
 
   .row
-    .col-md-12
-      %h1.text-center
-        How does Decision<em>Flex</em> work?
-  .row
-    .col-sm-6.col-lg-3
-      %img.img-responsive{:src => "images/utility.png", :alt => "Utility theory"}
-      %p.text-center.lead 
-        Under the hood Decision<em>Flex</em> uses Utility Theory to score each action, making it easy to compare apples to oranges
-    .col-sm-6.col-lg-3
-      %img.img-responsive{:src => "images/tools.png",
-                          :alt => "Hierarchy and animation curve tools"}
-      %p.text-center.lead 
-        It uses <strong>familiar Unity editor tools</strong>, including the hierarchy window and animation curves, in an intuitive manner
-    .clearfix.visible-sm-block
-    .col-sm-6.col-lg-3
-      %img.img-responsive{:src => "images/codeeq.png", :alt => "Minimal code, no equations"}
-      %p.text-center.lead 
-        Decision<em>Flex</em> is easy to connect to your game, with <strong>minimal scripting</strong>. It requires <strong>no</strong> complex math equations
-    .col-sm-6.col-lg-3
-      %img.img-responsive{:src => "images/emergent.png", :alt => "Emergent and alive"}
-      %p.text-center.lead 
-        In no time at all your game can be making <strong>emergent</strong> and <strong>human-like</strong> decisions. You can design and tweak them from the editor to get them exactly right.
+    .col-md-5.col-md-push-7
+      %img.img-responsive.center-block{:src => "images/dflogo-taller.png"}
+    .col-md-7.col-md-pull-5
+      %h3
+        Delete all that code! Decision<em>Flex</em> for Unity can help!
+      %p.lead
+        Decision<em>Flex</em> great at making emergent and human-like AI. It is quick to integrate, with minimal code, full tutorial, and docs. You don't need to understand any complex maths to use it.
+      %p.lead
+        Decision<em>Flex</em> is easy to balance and maintain, using tools you know like the hierarchy and animation curves. It is based on Utility Theory, an increasingly popular approach to decision making.
+  %br
+  %br
 
-  = partial 'paddlepurchase'
-
+  %a{:id => "demos"}
   .row
     .col-md12
       %h1.text-center
@@ -112,7 +111,8 @@ layout: unitylayout
             Optimised
           %p.lead
             Decision<em>Flex</em> runs fast with no allocations out of the box. It copes with pooling. It has tools to timeslice decisions for predictiability and budgeting. 
-      
+
+  %a{:id => "buy"}
   = partial 'paddlepurchase'
   = partial('signup', :locals => {:desc => "Sign up to our newsletter if you'd like to know about future products from TenPN."})
 
@@ -120,4 +120,4 @@ layout: unitylayout
   %footer
     %p
       &copy; Andrew Fray 2014
-    Heartbeat designed by <a href="http://www.thenounproject.com/jardson">Jardson A.</a>. Plant designed by <a href="http://www.thenounproject.com/prerakpatel">Prerak Patel</a>. Wrench designed by <a href="http://www.thenounproject.com/tgines">Tony Gines</a>. Gears designed by <a href="http://www.thenounproject.com/crisdobbins">Cris Dobbins</a>. No designed by <a href="http://www.thenounproject.com/ricardo.cherem">Ricardo Augusto Cherem</a>. Calculator designed by <a href="http://www.thenounproject.com/rutmer">Rutmer Zijlstra</a>. Css designed by <a href="http://www.thenounproject.com/dreamer810">Qing Li</a>. Graph designed by <a href="http://www.thenounproject.com/MisterPixel">Mister Pixel</a>. Flow Chart designed by <a href="http://www.thenounproject.com/ales.kalan.zlatoroh">Aleš Kalan</a>. Dumbbell designed by <a href="http://www.thenounproject.com/alesantander">Alejandro Santander</a>. Work designed by <a href="http://www.thenounproject.com/thisisjaclyne">Jaclyne Ooi</a>. M16 designed by <a href="http://www.thenounproject.com/nadav.barkan">Nadav Barkan</a>. Targets designed by <a href="http://www.thenounproject.com/hayden.kerrisk">Hayden Kerrisk</a>. First Aid designed by <a href="http://www.thenounproject.com/thibault.geffroy">Thibault Geffroy</a>. All from the <a href="http://www.thenounproject.com">Noun Project</a>. 
+    Flow Chart designed by <a href="http://www.thenounproject.com/ales.kalan.zlatoroh">Aleš Kalan</a>. Arrows designed by <a href="http://thenounproject.com/bravo/">Jaun Pablo Bravo</a>. All from the <a href="http://www.thenounproject.com">Noun Project</a>. 
