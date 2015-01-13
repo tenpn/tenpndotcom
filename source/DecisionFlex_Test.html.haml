@@ -11,6 +11,11 @@ layout: unitylayout
         Decision<em>Flex</em>
     %p.lead
       Simple to use, emergent decision making in Unity3D
+    %p
+      %a.btn.btn-large.btn-info{:href => "#buy", :role => "button"}
+        Buy
+      %a.btn.btn-large.btn-info{:href => "#demos", :role => "button"}
+        Demos
 
 .container
 
@@ -55,6 +60,7 @@ layout: unitylayout
   %br
   %br
 
+  %a{:id => "demos"}
   .row
     .col-md12
       %h1.text-center
@@ -105,7 +111,8 @@ layout: unitylayout
             Optimised
           %p.lead
             Decision<em>Flex</em> runs fast with no allocations out of the box. It copes with pooling. It has tools to timeslice decisions for predictiability and budgeting. 
-      
+
+  %a{:id => "buy"}
   = partial 'paddlepurchase'
   = partial('signup', :locals => {:desc => "Sign up to our newsletter if you'd like to know about future products from TenPN."})
 
