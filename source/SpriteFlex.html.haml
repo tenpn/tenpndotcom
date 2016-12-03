@@ -54,9 +54,13 @@ layout: unitylayout
             Sprite<em>Flex</em> comes with everything you need for shipping the avatars you've seen throughout this webpage, including sprites, prefabs and scenes.
 
   %a#buy
-  = partial 'paddlepurchase'
+  -# = partial 'paddlepurchase'
+  .row
+    .col-md-6
+      %p.lead
+        Sprite<em>Flex</em> isn't quite ready for sale yet - check back soon!
   = partial('signup', :locals => {:desc => "Sign up to our newsletter if you'd like to know about future products from TenPN"})
-
+  
 .container
   %footer
     %p
