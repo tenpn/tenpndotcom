@@ -1,0 +1,64 @@
+---
+title: SpriteFlex
+layout: unitylayout
+---
+
+/ Main jumbotron for a primary marketing message or call to action 
+.jumbotron
+  .container
+    .text-info
+      %h1
+        Sprite<em>Flex</em>
+    %p.lead
+      More visual variety for less effort, with free avatar art
+    %p
+      %a.btn.btn-large.btn-info{:href => "#buy", :role => "button"}
+        Buy
+      %a.btn.btn-large.btn-info{:href => "#demos", :role => "button"}
+        Demos
+
+.container
+
+  .row
+    .col-md-6
+      .thumbnail
+        %img.img-responsive{:src => "images/sf-components.png", :alt => "Per-sprite components of a single paper doll"}
+        .caption
+          %h3
+            Wireframe
+          %p.lead
+            Break your art down into individual parts like hair and eyes. Arrange them so when they overlap it looks like one big sprite. This is a wireframe.
+    .col-md-6
+      .thumbnail
+        %img.img-responsive{:src => "images/sf-variations.png", :alt => ""}
+        .caption
+          %h3
+            Variations
+          %p.lead
+            Create as many variations of each part as you like. The more the better, but even a handful will give hundreds of variations when combined. At runtime Sprite<em>Flex</em> can add even more variation through random scaling, placement and mirroring.
+    .col-md-6
+      .thumbnail
+        %img.img-responsive{:src => "images/sf-setup.png", :alt => "Fast and smooth"}
+        .caption
+          %h3
+            Putting it together
+          %p.lead
+            Tell Sprite<em>Flex</em> about the wireframe using our components. Let it put everything together at runtime. Full scripting control over the process, if you need it.
+    .col-md-6
+      .thumbnail
+        %img.img-responsive{:src => "images/sf-prefabs.png", :alt => "Avatars ready to go"}
+        .caption
+          %h3
+            Free avatar art
+          %p.lead
+            Sprite<em>Flex</em> comes with everything you need for shipping the avatars you've seen throughout this webpage, including sprites, prefabs and scenes.
+
+  %a#buy
+  = partial 'paddlepurchase'
+  = partial('signup', :locals => {:desc => "Sign up to our newsletter if you'd like to know about future products from TenPN"})
+
+.container
+  %footer
+    %p
+      &copy; Andrew Fray 2014
+    Flow Chart designed by <a href="http://www.thenounproject.com/ales.kalan.zlatoroh">Aleš Kalan</a>. Arrows designed by <a href="http://thenounproject.com/bravo/">Jaun Pablo Bravo</a>. All from the <a href="http://www.thenounproject.com">Noun Project</a>. 

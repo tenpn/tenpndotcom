@@ -12,9 +12,8 @@ title: TenPN.com
       Video game engine plugins and technology
 
 .container
-  / Example row of columns 
   .row
-    .col-sm-4
+    .col-sm-6
       %h2
         DecisionFlex
       %p.lead
@@ -22,7 +21,16 @@ title: TenPN.com
       %p
         %a.btn.btn-primary{:href => "DecisionFlex.html", :role => "button"}
           View details &raquo;
-    .col-sm-4
+    .col-sm-6
+      %h2
+        SpriteFlex
+      %p.lead
+        Procedurally generate sprites from individual parts. With free art for avatars.
+      %p
+        %a.btn.btn-primary{:href => "SpriteFlex.html", :role => "button"}
+          View details &raquo;
+  .row
+    .col-sm-6
       %h2
         Blog
       %p.lead
@@ -30,7 +38,7 @@ title: TenPN.com
       %p
         %a.btn.btn-default{:href => "http://andrewfray.wordpres.com", :role => "button"}
           Visit &raquo;
-    .col-sm-4
+    .col-sm-6
       %h2
         Contact
       %p.lead
@@ -46,7 +54,7 @@ title: TenPN.com
               Email &raquo;
 
   %hr
-  = partial('signup', :locals => {:desc => "Sign up to our newsletter for updates on DecisionFlex and news on new products"})
+  = partial('signup', :locals => {:desc => "Sign up to our newsletter for updated on new products"})
       
   %hr
 
