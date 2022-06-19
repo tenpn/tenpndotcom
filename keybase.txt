@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/tenpn
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.tenpn.com
+  * I am tenpn (https://keybase.io/tenpn) on keybase.
+  * I have a public key with fingerprint 17CD 731F C8B6 3FB1 A36E  E0D1 757A DD2D 39AC 1E84
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "17cd731fc8b63fb1a36ee0d1757add2d39ac1e84",
+            "host": "keybase.io",
+            "key_id": "757add2d39ac1e84",
+            "kid": "010179788c91e4d1569c7ea7b713f54ec524d89502e63f95a5ae88b5d3efee8fa3960a",
+            "uid": "ff5a0766d0b7f081dfa95560a177fa19",
+            "username": "tenpn"
+        },
+        "service": {
+            "hostname": "www.tenpn.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1429031584,
+    "expire_in": 157680000,
+    "prev": "8ba4a79b2b0c709de825e17b75f56aa3872bb13777fed1d15fd32cad33fe26b5",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.8
+Comment: https://keybase.io/crypto
+
+yMM1AnicbZJrTBxVFMcXyhYEiRSCKI/KTmyllsc8d2ZWiig1REojlcW0RqB3Zu4s
+Q2F3uzu7vEpjAnzZytaGBgpduxYDq2lFCE0MjU2FtDQVEVpQHomIIBZblJBCxdAG
+75L6zfvl5p7zO/97/ifnRvg2TWiAo/rnFP7yzvqAof4Mh6YgJefTGkywSFWYoQY7
+BrcuWTGboM1qU8wqZsAIVpRYipBFTtBTskAASg8hLhEswwJJIiWKByIBORpLxkos
+dn8FkhGAHaYqFhRDj2JFQtH/4Y9tJXACJ1ie5TiRJyAtEYyeF1kIWIElKJmhociQ
+tMTxDE5C1ADPAAZAjhMYiYIyhJwMKF6PAyTn2JKTZQbgrF4v4QIr4xwhyYBnGEQQ
+LCsDgveDdmgzg3KIaBWarWasNhlDIaciQr9/v42n6YqKitQtJFW0lKNKq82iWkRL
+GUqVqKrV4K9Uq6xbKBSKn4oUC4pZQkNEBU5osysWM2YgECmqil+VoEkepwiGo5Mx
+WGlVbLBY8RMMq+dwdPzfQCeS5ARAA5YXSAEXWZyXIEcykECDYWRGDwDFsaQgEBSL
+jEGJQJOTJYoUgURRMiT1AoP5bR03WzADhdoEJiRpV0xmoDpsEKsd6P8gSBMQqtmu
+DfSvgSb0mYj/lqM3PULjbUi4LU18GHWlZTq0sitjcOXjm7iJEW5f6S7sO3Fp//lY
+ZaNI4zqaee8gi3+1kpI180rj48kcz2bpTx0X1s9otxc8cbxoGmwf41I79pGJRavb
+PA3Xy6ITJO+OAz+2ykrI62e/e61gbtS49o/0Z/Z61u45XXp7+fvG7sLsXaOt2i/b
+9lov/+5TAt52/+J135wLcwmdtpy48bQ6x0bnS8eNXUNvWu8x7UG6a+78Eo2s3tHZ
+899aDns5Lkx7cqlu8kxkn+PqVIlxLffwwXP7rx94YupIiOxrqDp9y5VWeeHU53Tx
+uKtRNz4qV+uCDs3H5Odl3E/6ZHC5InbpuTulTSvRnkA5arL31RgyZoFfvp/UkRb/
+x7fupu/Pghd0Pa6p5vO/TkR0FWp7biW2ue2nJ36jzRffec/52Z6qiHHjanC1ga6P
+XltpUK+NpNM5u3ubFjbHkoo2Pho+93jdVaUVvTuPPmwOfxSbVfbIBxfwuwW+vxoz
+9hxZDDxRPbIUv3jyb6MvZPr5YW/rcm3bw9yW6Mm4gUM3PEZxfv6H8tk8Z9+RSzNB
+cZuLI/vGevIG9k7cHd5+Kjgyl5xtdDqWMkuHg2tiHL7+QfsbDzyzrdNfP+upXjv8
+rt1d1510Mcdie5BJxidmh19taMn0zkQE7rL1hzZ/EeVbVUFSU2/nVMiO8W82AuvJ
+of5/AWWypl4=
+=/c4V
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tenpn
+
+==================================================================
